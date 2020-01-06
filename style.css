@@ -1,0 +1,363 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: VHS
+	line-height: 1.6;
+	color: #ffffff;
+	background: #101010;
+	height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	position: relative;
+	font-family: VHS;
+	color: #ffffff;
+	font-size: 20px;
+	margin-top: 20px;
+	opacity: 0%;
+	animation: hideshow 0.5s ease forwards 2.3s;
+	z-index: 1;
+}
+
+p1{
+	position: relative;
+	font-family: VHS;
+	color: #ffffff;
+	font-size: 20px;
+	margin-top: 20px;
+	opacity: 0%;
+	animation: hideshow 0.5s ease forwards 2.3s;
+	z-index: 1;
+}
+
+p1:hover {
+	position: relative;
+	bottom: 2px;
+	font-size: 23px;
+  	color: #000000;
+  	background-color: #ffffff;
+  	transition: 0.3s;
+}
+
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+}
+
+section#About{
+	background: #101010;
+	z-index: 1;
+	height: 100vh;
+}
+
+section#Contact{
+	background: #101010;
+	z-index: 1;
+}
+
+@font-face{
+	font-family: 'VHS';
+	font-style: normal;
+	font-weight: 400;
+	src: url(vcr-osd-mono/VCR_OSD_MONO.ttf);
+}
+
+.column{
+	position: relative;
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	opacity: 0%;
+	animation: hideshow 0.5s ease forwards 2.3s;
+}
+
+.row::after{
+	width: 0%;
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	display: flex;
+	width: 100%;
+	height: 50px;
+	opacity: 0%;
+	animation: hideshow 0.5s ease forwards 2.3s;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: center;
+}
+
+.navbar ul li {
+	padding-top: 15px;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: VHS;
+	font-size: 20px;
+	border: 15px solid transparent;
+	letter-spacing: 0.2em;
+}
+
+.navbar ul li a:hover {
+	position: relative;
+	top: 5px;
+	font-size: 22px;
+  	color: #000000;
+  	background-color: #ffffff;
+  	transition: 0.5s;
+}
+
+.glitch{
+	font-family: VHS;
+	color: #ffffff;
+	font-size: 35px;
+	letter-spacing: 12px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 800;
+	opacity: 0%;
+	animation: hideshow 7s ease forwards 0s;
+	z-index: 2;
+}
+
+.glitch::before,.glitch::after{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.glitch::before{
+	color: #ff00c1;
+	opacity: 0%;
+	animation: glitch-effect 2s infinite, hideshow 0s ease forwards 4.2s;
+}
+
+.glitch::after{
+	color: #3498db;
+	opacity: 0%;
+	animation: glitch-effect 3s infinite, hideshow 0s ease forwards 4.2s;
+}
+
+.glitch2{
+	font-family: VHS;
+	color: #ffffff;
+	font-size: 30px;
+	letter-spacing: 12px;
+	position: relative;
+	text-align: center
+	font-weight: 800;
+	opacity: 0%;
+	animation: hideshow 0.5s ease forwards 2.3s;
+	z-index: 1;
+}
+
+.glitch2::before,.glitch2::after{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.glitch2::before{
+	color: #ff00c1;
+	opacity: 0%;
+	animation: glitch-effect 2s infinite, hideshow 0s ease forwards 4.2s;
+}
+
+.glitch2::after{
+	color: #3498db;
+	opacity: 0%;
+	animation: glitch-effect 3s infinite, hideshow 0s ease forwards 4.2s;
+}
+
+.post-container > *{
+	float: left;
+	margin-rgiht: 5px;
+}
+
+.clearfix{
+	*zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.about-container{
+	width: 500px;
+}
+
+.aboutme{
+	float: left;
+	display: block;
+	max-width: 195px;
+	opacity: 0%;
+	animation: hideshow 0.5s ease forwards 2.3s;
+}
+
+.aboutme:hover{
+	transform: scale(1.05);
+	filter: invert(93.5%);
+	transition: 0.3s;
+}
+
+.contacts:hover{
+	filter: invert(100%);
+	background-color: #000000;
+	transition: 0.3s;
+}
+
+#text{
+	font-family: VHS;
+	color: #ffffff;
+	font-size: 20px;
+	margin-top: 20px;
+	text-align: left;
+	opacity: 0%;
+	animation: hideshow 0.5s ease forwards 2.3s;
+	z-index: 1;
+}
+
+#epilepsy{
+	position: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-width: 100%;
+	min-height: 100%;
+	opacity: 0%;
+	animation: aestheticshow 0s ease forwards 4.2s;
+	z-index: -1
+}
+
+#reset{
+	position: fixed;
+	background-repeat: no-repeat;
+	min-width: 100%;
+	min-height: 100%;
+	opacity: 0%;
+	animation: aestheticshow 0.5s ease forwards 2.3s, dissapear 0.01s ease forwards 4.2s;
+	z-index: -1;
+}
+
+#filter{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	opacity: 0%;
+	animation: showfilter 0.5s ease forwards 2.3s;
+	z-index: 10;
+	pointer-events: none;
+}
+
+#homescroll{
+	position: absolute;
+	bottom: 5%;
+	transition: translate(0%, -5%);
+  	display: block;
+  	z-index: 2;
+  	margin: -16px;
+  	opacity: 0%;
+  	animation: hideshow 0.5s ease forwards 2.3s;
+}
+
+@keyframes hideshow{
+	from{
+		opacity: 0%;
+	}
+	to{
+		opacity: 100%;
+	}
+}
+@keyframes showfilter{
+	from{
+		opacity: 0%;
+	}
+	to{
+		opacity: 30%;
+	}
+}
+@keyframes aestheticshow{
+	from{
+		opacity: 0%;
+	}
+	to{
+		opacity: 40%;
+	}
+}
+@keyframes dissapear{
+	from{
+		opacity: 40%;
+	}
+	to{
+		opacity: 0%;
+	}
+}
+@keyframes glitch-effect{
+	0%{
+		left: -3px;
+		top: -3px;
+	}25%{
+		left: 3px;
+		top: 0px;
+	}50%{
+		left: -3px;
+		top: 3px;
+	}75%{
+		left: 2px;
+		top: -2px;
+	}
+	100%{
+		left: 0px;
+		top: -3px;
+	}
+}
