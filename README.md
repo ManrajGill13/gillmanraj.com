@@ -1,4 +1,5 @@
-#### gillmanraj.com
+#### Learning HTML, CSS, and JavaScript
 My attempt at making a personal website
 
-https://manrajgill13.github.io/#Home
+http://gillmanraj.com/
+
