@@ -303,7 +303,7 @@ section#Contact{
 	transition: translate(0%, -5%);
   	display: block;
   	z-index: 2;
-  	margin: -40px;
+  	margin: -30px;
   	opacity: 0%;
   	animation: hideshow 0.5s ease forwards 2.3s, idle infinite 2.3s;
 }
