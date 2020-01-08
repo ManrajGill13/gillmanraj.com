@@ -302,12 +302,13 @@ section#Contact{
 #homescroll{
 	position: absolute;
 	bottom: 5%;
+	width: 3.5%;
 	transition: translate(0%, -5%);
   	display: block;
   	z-index: 2;
-  	margin: -16px;
+  	margin: -40px;
   	opacity: 0%;
-  	animation: hideshow 0.5s ease forwards 2.3s;
+  	animation: hideshow 0.5s ease forwards 2.3s, idle infinite 2.3s;
 }
 
 @keyframes hideshow{
