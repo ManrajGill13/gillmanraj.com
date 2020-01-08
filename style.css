@@ -79,7 +79,7 @@ section#Contact{
 	font-family: 'VHS';
 	font-style: normal;
 	font-weight: 400;
-	src: url(vcr-osd-mono/VCR_OSD_MONO.ttf);
+	src: url(../VCR_OSD_MONO.ttf);
 }
 
 .column{
