@@ -59,11 +59,10 @@ function setBackground(urls, targetId) {
 				"https://i.imgur.com/EZILStq.gif", //leather jacket falling down bike hyukoh
 				"https://i.imgur.com/v24b5qb.gif", //alien close
 				"https://i.imgur.com/95LRjTR.gif", //alien idle
-				"https://i.imgur.com/l3KGnm0.gif", //paper mario excellent
 				"https://i.imgur.com/9YLfPe8.gif", //teenage mutant ninja turtles falling
 				"https://i.imgur.com/XDKed94.gif", //teenage mutant ninja turtles click clack
 				"https://i.imgur.com/r63E6qo.gif", //retro car
-				"https://i.imgur.com/Ij8eE8k.gif", //radio waves
+				"https://i.imgur.com/Ij8eE8k.gif"  //radio waves
 			]
     	}
         var index = Math.floor(Math.random() * (urls.length));
@@ -131,11 +130,10 @@ var urls = [
 	"https://i.imgur.com/EZILStq.gif", //leather jacket falling down bike hyukoh
 	"https://i.imgur.com/v24b5qb.gif", //alien close
 	"https://i.imgur.com/95LRjTR.gif", //alien idle
-	"https://i.imgur.com/l3KGnm0.gif", //paper mario excellent
 	"https://i.imgur.com/9YLfPe8.gif", //teenage mutant ninja turtles falling
 	"https://i.imgur.com/XDKed94.gif", //teenage mutant ninja turtles click clack
 	"https://i.imgur.com/r63E6qo.gif", //retro car
-	"https://i.imgur.com/Ij8eE8k.gif" //radio waves
+	"https://i.imgur.com/Ij8eE8k.gif"  //radio waves
 ];
 
 var target = "epilepsy";
@@ -179,5 +177,36 @@ $(document).ready(function() {
     });
     
 });
+
+$(window).on("load", function(){
+	mainNav();
+	$(window).scroll(function(){
+	    mainNav();
+	});
+	function mainNav() {
+	    var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+	    if (top > 40) $('.navbar').stop().animate({
+	        "opacity": '1',
+	        "top": '0'
+	    });
+	    else $('.navbar').stop().animate({
+	        "top": '-70',
+	        "opacity": '0'
+	    });
+	}
+});
+
+$(document).ready(function () {
+    setTimeout(function(){
+        $('.navbar').fadeIn(500);
+    }, 2300);
+});
+
+let a = baffle('.glitch').start();
+	a.set({
+		characters : '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
+		speed: 75
+	});
+	a.reveal(4000, 3000);
 
 setBackground(urls, target);
