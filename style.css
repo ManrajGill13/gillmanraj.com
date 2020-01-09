@@ -212,6 +212,8 @@ section#Contact{
 
 .post-container{
 	display: flex;
+	opacity: 0%;
+	animation: hideshow 0.5s ease forwards 2.3s;
 }
 
 .clearfix{
