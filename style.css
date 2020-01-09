@@ -53,7 +53,6 @@ p1:hover {
   	transition: 0.3s;
 }
 
-
 section{
 	display: flex;
 	flex-direction: column;
@@ -63,6 +62,7 @@ section{
 	width: 100%;
 	height: 100vh;
 	scroll-snap-align: start;
+	white-space: nowrap;
 }
 
 section#About{
@@ -80,14 +80,13 @@ section#Contact{
 	font-family: 'VHS';
 	font-style: normal;
 	font-weight: 400;
-	src: url(VCR_OSD_MONO.ttf);
+	src: url(../VCR_OSD_MONO.ttf);
 }
 
 .column{
 	position: relative;
 	float: left;
-	width: 33.33%;
-	padding: 5px;
+	max-width: 33.33%;
 	opacity: 0%;
 	animation: hideshow 0.5s ease forwards 2.3s;
 }
@@ -210,9 +209,8 @@ section#Contact{
 	animation: glitch-effect 3s infinite, hideshow 0s ease forwards 4.2s;
 }
 
-.post-container > *{
-	float: left;
-	margin-rgiht: 5px;
+.post-container{
+	display: flex;
 }
 
 .clearfix{
@@ -229,14 +227,12 @@ section#Contact{
     clear: both;
 }
 
-.about-container{
-	width: 500px;
-}
-
 .aboutme{
 	float: left;
 	display: block;
 	max-width: 195px;
+	max-height: 236px;
+	height: auto;
 	opacity: 0%;
 	animation: hideshow 0.5s ease forwards 2.3s;
 }
@@ -257,8 +253,10 @@ section#Contact{
 	font-family: VHS;
 	color: #ffffff;
 	font-size: 20px;
-	margin-top: 20px;
 	text-align: left;
+	position: relative;
+	bottom: 4px;
+	left: 8px;
 	opacity: 0%;
 	animation: hideshow 0.5s ease forwards 2.3s;
 	z-index: 1;
@@ -299,7 +297,7 @@ section#Contact{
 #homescroll{
 	position: absolute;
 	bottom: 5%;
-	width: 3.5%;
+	width: 50px;
 	transition: translate(0%, -5%);
   	display: block;
   	z-index: 2;
@@ -373,4 +371,39 @@ section#Contact{
 	}100%{
 		bottom: 8%;
 	}
+}
+
+@media screen and (max-width: 481px){
+
+	.navbar ul li a {
+		font-size: 15px;
+	}
+
+	.glitch{
+		font-size: 30px;
+		letter-spacing: 8px;
+	}
+
+	.glitch2{
+		font-size: 30px;
+		letter-spacing: 8px;
+	}
+
+	p{
+		font-size: 15px;
+	}
+
+	p1{
+		font-size: 15px;
+	}
+
+	#text{
+		font-size: 15px;
+	}
+
+	.aboutme{
+		width: 150px;
+		height:97%;
+	}
+
 }
