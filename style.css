@@ -6,9 +6,11 @@
 
 html{
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body{
+	position: relative;
 	font-family: VHS
 	line-height: 1.6;
 	color: #ffffff;
