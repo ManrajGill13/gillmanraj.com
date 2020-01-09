@@ -37,6 +37,7 @@ p{
 	z-index: 1;
 }
 
+//p1 for text to be hovered on
 p1{
 	position: relative;
 	font-family: VHS;
@@ -50,7 +51,6 @@ p1{
 }
 
 p1:hover {
-	position: relative;
 	font-size: 30px;
   	color: #000000;
   	background-color: #ffffff;
@@ -78,6 +78,8 @@ section#Contact{
 	z-index: 1;
 }
 
+//display none for 2.3 and then loaded from javascript
+//height adjusted when hovered
 .navbar {
 	position: fixed;
 	z-index: 3;
@@ -125,6 +127,7 @@ section#Contact{
   	transition: 0.5s;
 }
 
+//before and after for 3D glitch effect
 .glitch-home{
 	font-family: VHS;
 	color: #ffffff;
@@ -279,6 +282,7 @@ section#Contact{
 	transition: 0.3s;
 }
 
+//fade in elements after brief period to max opacity
 @keyframes hideshow{
 	from{
 		opacity: 0%;
@@ -287,6 +291,8 @@ section#Contact{
 		opacity: 100%;
 	}
 }
+
+//fade in filter to 30% opacity
 @keyframes showfilter{
 	from{
 		opacity: 0%;
@@ -295,6 +301,8 @@ section#Contact{
 		opacity: 30%;
 	}
 }
+
+//fade in background images to 18%
 @keyframes aestheticshow{
 	from{
 		opacity: 0%;
@@ -303,6 +311,8 @@ section#Contact{
 		opacity: 18%;
 	}
 }
+
+//remove first reset image once played
 @keyframes dissapear{
 	from{
 		opacity: 40%;
@@ -311,6 +321,8 @@ section#Contact{
 		opacity: 0%;
 	}
 }
+
+//small adjustments to relative properties for glitch effect
 @keyframes glitch-effect{
 	0%{
 		left: -3px;
@@ -334,6 +346,7 @@ section#Contact{
 	}
 }
 
+//homescroll up and down idle animation
 @keyframes idle{
 	0%{
 		bottom: 8%;
@@ -346,6 +359,7 @@ section#Contact{
 	}
 }
 
+//mobile compatibility
 @media screen and (max-width: 500px){
 
 	.navbar ul li a {
