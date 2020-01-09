@@ -9,14 +9,17 @@ html{
 }
 
 body{
-	position: relative;
-	font-family: VHS
-	line-height: 1.6;
-	color: #ffffff;
 	background: #101010;
 	height: 100vh;
 	width: 100%;
 	overflow-x: hidden;
+}
+
+@font-face{
+	font-family: 'VHS';
+	font-style: normal;
+	font-weight: 400;
+	src: url(vcr-osd-mono/VCR_OSD_MONO.ttf);
 }
 
 a{
@@ -43,12 +46,12 @@ p1{
 	opacity: 0%;
 	animation: hideshow 0.5s ease forwards 2.3s;
 	z-index: 1;
+	transition: 0.3s;
 }
 
 p1:hover {
 	position: relative;
-	bottom: 2px;
-	font-size: 23px;
+	font-size: 30px;
   	color: #000000;
   	background-color: #ffffff;
   	transition: 0.3s;
@@ -62,14 +65,12 @@ section{
 	text-align: center;
 	width: 100%;
 	height: 100vh;
-	scroll-snap-align: start;
 	white-space: nowrap;
 }
 
 section#About{
 	background: #101010;
 	z-index: 1;
-	height: 100vh;
 }
 
 section#Contact{
@@ -77,37 +78,15 @@ section#Contact{
 	z-index: 1;
 }
 
-@font-face{
-	font-family: 'VHS';
-	font-style: normal;
-	font-weight: 400;
-	src: url(../VCR_OSD_MONO.ttf);
-}
-
-.column{
-	position: relative;
-	float: left;
-	max-width: 33.33%;
-	opacity: 0%;
-	animation: hideshow 0.5s ease forwards 2.3s;
-}
-
-.row::after{
-	width: 0%;
-	content: "";
-	clear: both;
-	display: table;
-}
-
 .navbar {
 	position: fixed;
-	top: 0;
 	z-index: 3;
 	display: flex;
 	width: 100%;
-	height: 50px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.7);
 	display: none;
-	background-color: rgba(0,0,0,0.5);
+	transition: 0.5s;
 }
 
 .navbar ul {
@@ -118,7 +97,7 @@ section#Contact{
 }
 
 .navbar ul li {
-	padding-top: 15px;
+	padding-top: 12px;
 }
 
 .navbar ul li a {
@@ -126,21 +105,27 @@ section#Contact{
 	text-transform: uppercase;
 	color: #ffffff;
 	font-family: VHS;
-	font-size: 20px;
+	font-size: 15px;
 	border: 15px solid transparent;
 	letter-spacing: 0.2em;
+	transition: 0.5s;
+}
+
+.navbar:hover {
+	height: 52px;
+	transition: 0.5s;
 }
 
 .navbar ul li a:hover {
 	position: relative;
-	top: 5px;
+	top: 3px;
 	font-size: 22px;
   	color: #000000;
   	background-color: #ffffff;
   	transition: 0.5s;
 }
 
-.glitch{
+.glitch-home{
 	font-family: VHS;
 	color: #ffffff;
 	font-size: 35px;
@@ -149,11 +134,11 @@ section#Contact{
 	text-align: center;
 	font-weight: 800;
 	opacity: 0%;
-	animation: hideshow 7s ease forwards 0s;
+	animation: hideshow 7s ease forwards 0s, glitch-skew 1s infinite linear alternate-reverse;;
 	z-index: 2;
 }
 
-.glitch::before,.glitch::after{
+.glitch-home::before,.glitch-home::after{
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
@@ -163,19 +148,37 @@ section#Contact{
 	z-index: -1;
 }
 
-.glitch::before{
+.glitch-home::before{
 	color: #ff00c1;
 	opacity: 0%;
 	animation: glitch-effect 2s infinite, hideshow 0s ease forwards 4.2s;
 }
 
-.glitch::after{
+.glitch-home::after{
 	color: #3498db;
 	opacity: 0%;
 	animation: glitch-effect 3s infinite, hideshow 0s ease forwards 4.2s;
 }
 
-.glitch2{
+#home-scroll{
+	position: absolute;
+	bottom: 5%;
+	width: 50px;
+	transition: translate(0%, -5%);
+  	display: block;
+  	z-index: 2;
+  	margin: -30px;
+  	opacity: 0%;
+  	animation: hideshow 0.5s ease forwards 2.3s, idle infinite 2.3s;
+  	transition: 0.3s;
+}
+
+#home-scroll:hover{
+	transform: scale(1.5);
+	transition: 0.3s;
+}
+
+.glitch-header{
 	font-family: VHS;
 	color: #ffffff;
 	font-size: 30px;
@@ -188,7 +191,7 @@ section#Contact{
 	z-index: 1;
 }
 
-.glitch2::before,.glitch2::after{
+.glitch-header::before,.glitch-header::after{
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
@@ -198,13 +201,13 @@ section#Contact{
 	z-index: -1;
 }
 
-.glitch2::before{
+.glitch-header::before{
 	color: #ff00c1;
 	opacity: 0%;
 	animation: glitch-effect 2s infinite, hideshow 0s ease forwards 4.2s;
 }
 
-.glitch2::after{
+.glitch-header::after{
 	color: #3498db;
 	opacity: 0%;
 	animation: glitch-effect 3s infinite, hideshow 0s ease forwards 4.2s;
@@ -216,21 +219,7 @@ section#Contact{
 	animation: hideshow 0.5s ease forwards 2.3s;
 }
 
-.clearfix{
-	*zoom: 1;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.aboutme{
+.study-gif{
 	float: left;
 	display: block;
 	max-width: 195px;
@@ -238,31 +227,13 @@ section#Contact{
 	height: auto;
 	opacity: 0%;
 	animation: hideshow 0.5s ease forwards 2.3s;
+	transition: 0.3s;
 }
 
-.aboutme:hover{
-	transform: scale(1.05);
+.study-gif:hover{
+	transform: scale(1.1);
 	filter: invert(93.5%);
 	transition: 0.3s;
-}
-
-.contacts:hover{
-	filter: invert(100%);
-	background-color: #000000;
-	transition: 0.3s;
-}
-
-#text{
-	font-family: VHS;
-	color: #ffffff;
-	font-size: 20px;
-	text-align: left;
-	position: relative;
-	bottom: 4px;
-	left: 8px;
-	opacity: 0%;
-	animation: hideshow 0.5s ease forwards 2.3s;
-	z-index: 1;
 }
 
 #epilepsy{
@@ -297,16 +268,15 @@ section#Contact{
 	pointer-events: none;
 }
 
-#homescroll{
-	position: absolute;
-	bottom: 5%;
-	width: 50px;
-	transition: translate(0%, -5%);
-  	display: block;
-  	z-index: 2;
-  	margin: -30px;
-  	opacity: 0%;
-  	animation: hideshow 0.5s ease forwards 2.3s, idle infinite 2.3s;
+.contacts{
+	transition: 0.3s;
+}
+
+.contacts:hover{
+	filter: invert(100%);
+	transform: scale(1.2);
+	background-color: #000000;
+	transition: 0.3s;
 }
 
 @keyframes hideshow{
@@ -376,10 +346,19 @@ section#Contact{
 	}
 }
 
-@media screen and (max-width: 481px){
+@keyframes glitch-skew {
+  $steps: 10;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      transform: skew((random(10) - 5) + deg);
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
 
 	.navbar ul li a {
-		font-size: 15px;
+		font-size: 12px;
 	}
 
 	.glitch{
