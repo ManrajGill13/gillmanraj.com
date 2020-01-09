@@ -160,6 +160,38 @@ section#Contact{
 	animation: glitch-effect 3s infinite, hideshow 0s ease forwards 4.2s;
 }
 
+#filter{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	opacity: 0%;
+	animation: showfilter 0.5s ease forwards 2.3s;
+	z-index: 10;
+	pointer-events: none;
+}
+
+#reset{
+	position: fixed;
+	background-repeat: no-repeat;
+	min-width: 100%;
+	min-height: 100%;
+	opacity: 0%;
+	animation: aestheticshow 0.5s ease forwards 2.3s, dissapear 0.01s ease forwards 4.2s;
+	z-index: -1;
+}
+
+#epilepsy{
+	position: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-width: 100%;
+	min-height: 100%;
+	opacity: 0%;
+	animation: aestheticshow 0s ease forwards 4.2s;
+	z-index: -1
+}
+
 #home-scroll{
 	position: absolute;
 	bottom: 5%;
@@ -234,38 +266,6 @@ section#Contact{
 	transform: scale(1.1);
 	filter: invert(93.5%);
 	transition: 0.3s;
-}
-
-#epilepsy{
-	position: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	min-width: 100%;
-	min-height: 100%;
-	opacity: 0%;
-	animation: aestheticshow 0s ease forwards 4.2s;
-	z-index: -1
-}
-
-#reset{
-	position: fixed;
-	background-repeat: no-repeat;
-	min-width: 100%;
-	min-height: 100%;
-	opacity: 0%;
-	animation: aestheticshow 0.5s ease forwards 2.3s, dissapear 0.01s ease forwards 4.2s;
-	z-index: -1;
-}
-
-#filter{
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	opacity: 0%;
-	animation: showfilter 0.5s ease forwards 2.3s;
-	z-index: 10;
-	pointer-events: none;
 }
 
 .contacts{
@@ -352,12 +352,12 @@ section#Contact{
 		font-size: 12px;
 	}
 
-	.glitch{
+	.glitch-home{
 		font-size: 30px;
 		letter-spacing: 8px;
 	}
 
-	.glitch2{
+	.glitch-header{
 		font-size: 30px;
 		letter-spacing: 8px;
 	}
@@ -370,11 +370,7 @@ section#Contact{
 		font-size: 15px;
 	}
 
-	#text{
-		font-size: 15px;
-	}
-
-	.aboutme{
+	.study-gif{
 		width: 150px;
 		height:97%;
 	}
