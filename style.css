@@ -19,7 +19,7 @@ body{
 	font-family: 'VHS';
 	font-style: normal;
 	font-weight: 400;
-	src: url(../VCR_OSD_MONO.ttf);
+	src: url(vcr-osd-mono/VCR_OSD_MONO.ttf);
 }
 
 a{
@@ -344,15 +344,6 @@ section#Contact{
 	}100%{
 		bottom: 8%;
 	}
-}
-
-@keyframes glitch-skew {
-  $steps: 10;
-  @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      transform: skew((random(10) - 5) + deg);
-    }
-  }
 }
 
 @media screen and (max-width: 500px){
