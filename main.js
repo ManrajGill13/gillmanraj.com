@@ -1,3 +1,7 @@
+
+//sets backgrounds for website, randomly choosing a gif from an array
+//gifs are removed from the array once used and a new array of gifs
+//is used when the previous array becomes empty
 function setBackground(urls, targetId) {
     setInterval(function() {
     	if(urls.length === 0){
@@ -138,34 +142,9 @@ var urls = [
 
 var target = "epilepsy";
 
-$(function() {
-	var documentEl = $(document),
-	fade1 = $('#home').attr('id', $(this).text());
-	fade2 = $('#projects').attr('id', $(this).text());
-	fade3 = $('#about').attr('id', $(this).text());
-	    documentEl.on('scroll', function() {
-	    var currScrollPos = documentEl.scrollTop();          
-	    fade1.each(function() {
-	        var $this = $(this),
-	       	elemOffsetTop = $this.offset().top;
-	        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/300);
-	   	}); 
-	   	fade2.each(function() {
-	        var $this = $(this),
-	       	elemOffsetTop = $this.offset().top;
-	        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/300);
-	   	}); 
-	   	fade3.each(function() {
-	        var $this = $(this),
-	       	elemOffsetTop = $this.offset().top;
-	        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/300);
-	   	}); 
-	});
-});
-
 $(document).ready(function() {
     $(window).scroll( function(){
-        $('.glitch').each( function(i){
+        $('.glitch-home').each( function(i){
             var bottom_of_object = $(this).position().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
@@ -178,6 +157,7 @@ $(document).ready(function() {
     
 });
 
+//hides nav until scroll down
 $(window).on("load", function(){
 	mainNav();
 	$(window).scroll(function(){
@@ -196,12 +176,14 @@ $(window).on("load", function(){
 	}
 });
 
+//fade in navbar at 2.3s
 $(document).ready(function () {
     setTimeout(function(){
         $('.navbar').fadeIn(500);
     }, 2300);
 });
 
+//very fancy text load in animation
 let a = baffle('.glitch-home').start();
 	a.set({
 		characters : '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
