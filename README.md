@@ -5,7 +5,6 @@ http://gillmanraj.com/
 
 ### Checklist:
 
-- [x] Add more gifs
 - [x] Buy a domain
 - [x] Host website on github with custom domain
 - [x] Make website more mobile friendly
