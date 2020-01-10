@@ -7,7 +7,8 @@ http://gillmanraj.com/
 
 - [x] Add more gifs
 - [x] Buy a domain
-- [x] Host site on github with custom domain
+- [x] Host website on github with custom domain
+- [ ] Make website more mobile friendly
 - [ ] Finish projects
 - [ ] Finish Projects page
 - [ ] Implement snap scroll
