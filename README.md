@@ -10,4 +10,4 @@ http://gillmanraj.com/
 - [x] Make website more mobile friendly
 - [ ] Finish projects
 - [ ] Finish Projects page
-- [ ] Implement snap scroll
+- [ ] Implement snap scroll without hindering smooth scroll
