@@ -72,7 +72,7 @@ var urlscopy = urls.slice(0);
 function setBackground(urls, targetId) {
     setInterval(function() {
     	if(urls.length === 0){
-    		urls = urlscopy;
+    		urls = urlscopy.slice(0);
     	}
         var index = Math.floor(Math.random() * (urls.length));
         var target = document.getElementById(targetId);
