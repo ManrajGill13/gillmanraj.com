@@ -195,8 +195,7 @@ section#Contact{
 #home-scroll{
 	position: absolute;
 	bottom: 5%;
-	width: 50px;
-	transition: translate(0%, -5%);
+	height: 8vh;
   	display: block;
   	z-index: 2;
   	margin: -30px;
