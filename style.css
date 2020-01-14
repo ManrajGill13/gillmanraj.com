@@ -19,7 +19,7 @@ body{
 	font-family: 'VHS';
 	font-style: normal;
 	font-weight: 400;
-	src: url("../VCR_OSD_MONO.ttf");
+	src: url(vcr-osd-mono/VCR_OSD_MONO.ttf);
 }
 
 a{
@@ -30,7 +30,7 @@ p{
 	position: relative;
 	font-family: VHS;
 	color: #ffffff;
-	font-size: 20px;
+	font-size: 3vh;
 	margin-top: 20px;
 	opacity: 0%;
 	animation: hideshow 0.5s ease forwards 2.3s;
@@ -41,7 +41,7 @@ p1{
 	position: relative;
 	font-family: VHS;
 	color: #ffffff;
-	font-size: 20px;
+	font-size: 3vh;
 	margin-top: 20px;
 	opacity: 0%;
 	animation: hideshow 0.5s ease forwards 2.3s;
@@ -51,7 +51,7 @@ p1{
 
 p1:hover {
 	position: relative;
-	font-size: 30px;
+	font-size: 5vh;
   	color: #000000;
   	background-color: #ffffff;
   	transition: 0.3s;
@@ -105,7 +105,7 @@ section#Contact{
 	text-transform: uppercase;
 	color: #ffffff;
 	font-family: VHS;
-	font-size: 15px;
+	font-size: 2vh;
 	border: 15px solid transparent;
 	letter-spacing: 0.2em;
 	transition: 0.5s;
@@ -128,7 +128,7 @@ section#Contact{
 .glitch-home{
 	font-family: VHS;
 	color: #ffffff;
-	font-size: 35px;
+	font-size: 6vh;
 	letter-spacing: 12px;
 	position: relative;
 	text-align: center;
@@ -213,7 +213,7 @@ section#Contact{
 .glitch-header{
 	font-family: VHS;
 	color: #ffffff;
-	font-size: 30px;
+	font-size: 6vh;
 	letter-spacing: 12px;
 	position: relative;
 	text-align: center
@@ -254,9 +254,8 @@ section#Contact{
 .study-gif{
 	float: left;
 	display: block;
-	max-width: 195px;
-	max-height: 236px;
-	height: auto;
+	max-width: 40vh;
+	max-height: 35vh;
 	opacity: 0%;
 	animation: hideshow 0.5s ease forwards 2.3s;
 	transition: 0.3s;
