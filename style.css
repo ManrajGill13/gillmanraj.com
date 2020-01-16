@@ -253,7 +253,7 @@ section{
 
 .study-gif:hover{
 	transform: scale(1.1);
-	filter: invert(93.5%);
+	filter: invert(100%);
 	transition: 0.3s;
 }
 
