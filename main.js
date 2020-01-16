@@ -133,3 +133,9 @@ let a = baffle('.glitch-home').start();
 	a.reveal(4000, 3000);
 
 setBackground(urls, target);
+
+$(document).scroll(function(){
+    t = (500 - $(this).scrollTop())/500;
+    if(t<0)t=0;
+    $('#Home').css({opacity: t})
+})
