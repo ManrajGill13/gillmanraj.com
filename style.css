@@ -68,16 +68,6 @@ section{
 	white-space: nowrap;
 }
 
-section#About{
-	background: #101010;
-	z-index: 1;
-}
-
-section#Contact{
-	background: #101010;
-	z-index: 1;
-}
-
 .navbar {
 	position: fixed;
 	z-index: 3;
@@ -299,7 +289,7 @@ section#Contact{
 		opacity: 0%;
 	}
 	to{
-		opacity: 18%;
+		opacity: 40%;
 	}
 }
 @keyframes dissapear{
