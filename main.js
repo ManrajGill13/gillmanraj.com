@@ -134,8 +134,10 @@ let a = baffle('.glitch-home').start();
 
 setBackground(urls, target);
 
-$(document).scroll(function(){
-    t = (500 - $(this).scrollTop())/500;
-    if(t<0)t=0;
-    $('#Home').css({opacity: t})
-})
+$(window).on("scroll", function() {
+    if ($(window).scrollTop() > 300) {
+        $("#Home").addClass("dim");
+    } else {
+        $("#Home").removeClass("dim");
+    }
+});
