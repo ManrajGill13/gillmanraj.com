@@ -182,6 +182,15 @@ section{
 	z-index: -1
 }
 
+#Home{
+	transition: 1s;
+}
+
+#Home.dim{
+	opacity: 13%;
+	transition: 1s;
+}
+
 #home-scroll{
 	position: absolute;
 	bottom: 5%;
@@ -253,7 +262,7 @@ section{
 
 .study-gif:hover{
 	transform: scale(1.1);
-	filter: invert(100%);
+	filter: invert(93.5%);
 	transition: 0.3s;
 }
 
@@ -341,6 +350,10 @@ section{
 		font-size: 12px;
 	}
 
+	#home-scroll{
+		display: none;
+	}
+
 	.glitch-home{
 		font-size: 30px;
 		letter-spacing: 8px;
@@ -352,16 +365,32 @@ section{
 	}
 
 	p{
-		font-size: 15px;
+		font-size: 18px;
 	}
 
 	p1{
-		font-size: 15px;
+		font-size: 18px;
 	}
 
 	.study-gif{
 		width: 150px;
 		height:97%;
+	}
+
+	.glitch-home::before,.glitch-home::after{
+		display: none;
+	}
+
+	.glitch-home::before{
+		display: none
+	}
+
+	.glitch-home::after{
+		display: none
+	}
+
+	#filter{
+		display: none
 	}
 
 }
@@ -383,16 +412,16 @@ section{
 	}
 
 	p{
-		font-size: 10px;
+		font-size: 11px;
 	}
 
 	p1{
-		font-size: 10px;
+		font-size: 11px;
 	}
 
 	.study-gif{
 		width: 110px;
-		height:90%;
+		height: 85%;
 	}
 
 }
