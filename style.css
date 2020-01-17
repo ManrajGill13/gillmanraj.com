@@ -388,6 +388,18 @@ section{
 	.glitch-home::after{
 		display: none
 	}
+	
+	.glitch-header::before,.glitch-header::after{
+		display: none
+	}
+
+	.glitch-header::before{
+		display: none
+	}
+
+	.glitch-header::after{
+		display: none
+	}
 
 	#filter{
 		display: none
