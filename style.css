@@ -191,6 +191,33 @@ section{
 	transition: 0.6s;
 }
 
+#About{
+	transition: 0.6s;
+}
+
+#About.dim{
+	opacity: 20%;
+	transition: 0.6s;
+}
+
+#Projects{
+	transition: 0.6s;
+}
+
+#Projects.dim{
+	opacity: 20%;
+	transition: 0.6s;
+}
+
+#Contact{
+	transition: 0.6s;
+}
+
+#Contact.dim{
+	opacity: 20%;
+	transition: 0.6s;
+}
+
 #home-scroll{
 	position: absolute;
 	bottom: 5%;
