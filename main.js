@@ -134,10 +134,35 @@ let a = baffle('.glitch-home').start();
 
 setBackground(urls, target);
 
+//change opacity of sections when scrolling past
 $(window).on("scroll", function() {
-    if ($(window).scrollTop() > 300) {
+    if($(window).scrollTop() > $(document).height()*0.1) {
         $("#Home").addClass("dim");
     } else {
         $("#Home").removeClass("dim");
+    }
+});
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > $(document).height()*0.35 || $(window).scrollTop() < $(document).height()*0.15) {
+        $("#About").addClass("dim");
+    } else {
+        $("#About").removeClass("dim");
+    }
+});
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > $(document).height()*0.55 || $(window).scrollTop() < $(document).height()*0.35) {
+        $("#Projects").addClass("dim");
+    } else {
+        $("#Projects").removeClass("dim");
+    }
+});
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop() < $(document).height()*0.65) {
+        $("#Contact").addClass("dim");
+    } else {
+        $("#Contact").removeClass("dim");
     }
 });
