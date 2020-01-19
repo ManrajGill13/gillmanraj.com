@@ -373,7 +373,7 @@ section{
 @media screen and (max-width: 500px){
 
 	.navbar ul li a {
-		font-size: 8px;
+		font-size: 12px;
 	}
 
 	#home-scroll{
@@ -391,16 +391,16 @@ section{
 	}
 
 	p{
-		font-size: 14px;
+		font-size: 11px;
 	}
 
 	p1{
-		font-size: 14px;
+		font-size: 11px;
 	}
 
 	.study-gif{
-		min-width: 60px;
-		height: 65%;
+		min-width: 10vh;
+		max-height: 18vh;
 	}
 
 	.glitch-home::before,.glitch-home::after{
@@ -455,11 +455,6 @@ section{
 
 	p1{
 		font-size: 11px;
-	}
-
-	.study-gif{
-		min-width: 70px;
-		height: 55%;
 	}
 
 }
