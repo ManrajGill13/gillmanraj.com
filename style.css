@@ -401,7 +401,6 @@ section{
 	.study-gif{
 		min-width: 60px;
 		height: 65%;
-		margin-left: 70px;
 	}
 
 	.glitch-home::before,.glitch-home::after{
