@@ -280,7 +280,7 @@ section{
 .study-gif{
 	float: left;
 	display: block;
-	max-width: 40vh;
+	min-width: 30vh;
 	max-height: 35vh;
 	opacity: 0%;
 	animation: hideshow 0.5s ease forwards 2.3s;
