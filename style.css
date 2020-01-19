@@ -369,3 +369,98 @@ section{
 		bottom: 8%;
 	}
 }
+
+@media screen and (max-width: 500px){
+
+	.navbar ul li a {
+		font-size: 12px;
+	}
+
+	#home-scroll{
+		display: none;
+	}
+
+	.glitch-home{
+		font-size: 30px;
+		letter-spacing: 8px;
+	}
+
+	.glitch-header{
+		font-size: 30px;
+		letter-spacing: 8px;
+	}
+
+	p{
+		font-size: 18px;
+	}
+
+	p1{
+		font-size: 18px;
+	}
+
+	.study-gif{
+		width: 150px;
+		height:97%;
+	}
+
+	.glitch-home::before,.glitch-home::after{
+		display: none;
+	}
+
+	.glitch-home::before{
+		display: none
+	}
+
+	.glitch-home::after{
+		display: none
+	}
+	
+	.glitch-header::before,.glitch-header::after{
+		display: none
+	}
+
+	.glitch-header::before{
+		display: none
+	}
+
+	.glitch-header::after{
+		display: none
+	}
+
+	#filter{
+		display: none
+	}
+
+}
+
+@media screen and (max-width: 386px){
+
+	.navbar ul li a {
+		font-size: 10px;
+	}
+
+	.glitch-home{
+		font-size: 25px;
+		letter-spacing: 8px;
+	}
+
+	.glitch-header{
+		font-size: 25px;
+		letter-spacing: 8px;
+	}
+
+	p{
+		font-size: 11px;
+	}
+
+	p1{
+		font-size: 11px;
+	}
+
+	.study-gif{
+		width: 110px;
+		height: 85%;
+	}
+
+}
+
