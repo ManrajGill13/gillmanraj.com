@@ -373,7 +373,7 @@ section{
 @media screen and (max-width: 500px){
 
 	.navbar ul li a {
-		font-size: 12px;
+		font-size: 8px;
 	}
 
 	#home-scroll{
@@ -381,26 +381,27 @@ section{
 	}
 
 	.glitch-home{
-		font-size: 30px;
+		font-size: 20px;
 		letter-spacing: 8px;
 	}
 
 	.glitch-header{
-		font-size: 30px;
+		font-size: 20px;
 		letter-spacing: 8px;
 	}
 
 	p{
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 	p1{
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 	.study-gif{
-		width: 150px;
-		height:97%;
+		min-width: 60px;
+		height: 65%;
+		margin-left: 70px;
 	}
 
 	.glitch-home::before,.glitch-home::after{
@@ -458,9 +459,8 @@ section{
 	}
 
 	.study-gif{
-		min-width: 80px;
-		height: 85%;
+		min-width: 70px;
+		height: 55%;
 	}
 
 }
-
