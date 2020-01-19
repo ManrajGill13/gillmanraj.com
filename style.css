@@ -458,7 +458,7 @@ section{
 	}
 
 	.study-gif{
-		width: 110px;
+		min-width: 80px;
 		height: 85%;
 	}
 
