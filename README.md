@@ -1,5 +1,4 @@
-#### Learning HTML, CSS, and JavaScript
-My attempt at making a personal website
+My personal website
 
 [```http://gillmanraj.com/```](https://gillmanraj.com/)
 
