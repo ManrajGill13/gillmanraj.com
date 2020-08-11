@@ -384,7 +384,7 @@ section{
 @media screen and (max-width: 500px){
 
 	.navbar ul li a {
-		font-size: 12px;
+		font-size: 0px;
 	}
 
 	#home-scroll{
@@ -447,7 +447,7 @@ section{
 @media screen and (max-width: 386px){
 
 	.navbar ul li a {
-		font-size: 10px;
+		font-size: 0px;
 	}
 
 	.glitch-home{
