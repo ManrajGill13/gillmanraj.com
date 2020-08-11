@@ -83,6 +83,45 @@ function setBackground(urls, targetId) {
 
 var target = "epilepsy";
 
+function writeTime() {
+    var now = new Date();
+    hours = now.getHours();
+    minutes = now.getMinutes();
+    M = "AM ";
+
+    if (hours > 12){
+    	hours -= 12;
+    	M = "PM ";
+    }
+
+    if (hours < 10) {
+    	hours = '0' + hours;
+    }
+    if (minutes < 10) {
+    	minutes = '0' + minutes;
+    }
+    time = M + hours + ':' + minutes;
+
+    document.getElementById('time').innerHTML = time;
+
+    // call this function again in 1000ms
+    setTimeout(writeTime, 1000);
+}
+writeTime(); // initial call
+
+function writeDate() {
+    var now = new Date(), // current date
+        months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May.', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'];
+        date = [months[now.getMonth()] + now.getDate(), now.getFullYear()].join(' ');
+
+    // set the content of the element with the ID time to the formatted string
+    document.getElementById('date').innerHTML = date;
+
+    // call this function again in 1000ms
+    setTimeout(writeDate, 1000);
+}
+writeDate(); // initial call
+
 $(document).ready(function() {
     $(window).scroll( function(){
         $('.glitch-home').each( function(i){
