@@ -292,6 +292,12 @@ section{
 	transition: 0.3s;
 }
 
+.projects:hover{
+	transform: scale(1.1);
+	transition: 0.3s;
+	image-rendering: optimizeSpeed;
+}
+
 .contacts{
 	transition: 0.3s;
 }
