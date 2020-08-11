@@ -382,9 +382,20 @@ section{
 }
 
 @media screen and (max-width: 500px){
+	#play{
+		display: none;
+	}
+
+	#date{
+		display: none;
+	}
+
+	#time{
+		display: none;
+	}
 
 	.navbar ul li a {
-		font-size: 0px;
+		font-size: 12px;
 	}
 
 	#home-scroll{
@@ -445,9 +456,20 @@ section{
 }
 
 @media screen and (max-width: 386px){
+	#play{
+		display: none;
+	}
 
+	#date{
+		display: none;
+	}
+
+	#time{
+		display: none;
+	}
+	
 	.navbar ul li a {
-		font-size: 0px;
+		font-size: 10px;
 	}
 
 	.glitch-home{
