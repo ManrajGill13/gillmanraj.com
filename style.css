@@ -383,6 +383,10 @@ section{
 
 @media screen and (max-width: 500px){
 
+	.navbar {
+		justitfy-content: right;
+	}
+	
 	.navbar ul li a {
 		font-size: 12px;
 	}
