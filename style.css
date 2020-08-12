@@ -83,7 +83,7 @@ section{
 	display: flex;
 	list-style: none;
 	width: 100%;
-	justify-content: right;
+	justify-content: flex-end;
 }
 
 .navbar ul li {
