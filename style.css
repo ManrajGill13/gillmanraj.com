@@ -277,6 +277,16 @@ section{
 	animation: hideshow 0.5s ease forwards 2.3s;
 }
 
+.frame{
+	min-width: 380vh;
+	max-width: 390vh;
+	opacity: 0%;
+	position: absolute;
+	transform: scale(0.25);
+	animation: hideshow 0.5s ease forwards 2.3s;
+	transition: 0.3s
+}
+
 .study-gif{
 	float: left;
 	display: block;
