@@ -324,7 +324,7 @@ section{
 }
 
 .contacts:hover{
-	transform: scale(0.5);
+	transform: scale(0.6);
 	transition: 0.3s;
 	image-rendering: optimizeSpeed;
 }
