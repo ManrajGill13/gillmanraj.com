@@ -137,24 +137,7 @@ $(document).ready(function() {
     
 });
 
-//hides nav until scroll down
-$(window).on("load", function(){
-	mainNav();
-	$(window).scroll(function(){
-	    mainNav();
-	});
-	function mainNav() {
-	    var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-	    if (top > 40) $('.navbar').stop().animate({
-	        "opacity": '1',
-	        "top": '0'
-	    });
-	    else $('.navbar').stop().animate({
-	        "top": '-70',
-	        "opacity": '0'
-	    });
-	}
-});
+
 
 //fade in navbar at 2.3s
 $(document).ready(function () {
@@ -183,7 +166,7 @@ $(window).on("scroll", function() {
 });
 
 $(window).on("scroll", function() {
-    if($(window).scrollTop() > $(document).height()*0.35 || $(window).scrollTop() < $(document).height()*0.15) {
+    if($(window).scrollTop() > $(document).height()*0.50 || $(window).scrollTop() < $(document).height()*0.15) {
         $("#About").addClass("dim");
     } else {
         $("#About").removeClass("dim");
@@ -191,17 +174,9 @@ $(window).on("scroll", function() {
 });
 
 $(window).on("scroll", function() {
-    if($(window).scrollTop() > $(document).height()*0.55 || $(window).scrollTop() < $(document).height()*0.35) {
+    if($(window).scrollTop() < $(document).height()*0.60) {
         $("#Projects").addClass("dim");
     } else {
         $("#Projects").removeClass("dim");
-    }
-});
-
-$(window).on("scroll", function() {
-    if($(window).scrollTop() < $(document).height()*0.65) {
-        $("#Contact").addClass("dim");
-    } else {
-        $("#Contact").removeClass("dim");
     }
 });
