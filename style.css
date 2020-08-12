@@ -324,9 +324,7 @@ section{
 }
 
 .contacts:hover{
-	filter: invert(100%);
 	transform: scale(0.5);
-	background-color: #000000;
 	transition: 0.3s;
 	image-rendering: optimizeSpeed;
 }
