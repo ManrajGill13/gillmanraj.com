@@ -304,8 +304,8 @@ section{
 }
 
 .projects{
-	min-width: 5vh;
-	max-height: 8vh;
+	min-width: 15vh;
+	max-height: 28vh;
 }
 
 .projects:hover{
