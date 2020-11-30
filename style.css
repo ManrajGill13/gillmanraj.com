@@ -108,7 +108,7 @@ section{
 .navbar ul li a:hover {
 	position: relative;
 	top: 3px;
-	font-size: 22px;
+	font-size: 3vh;
   	color: #000000;
   	background-color: #ffffff;
   	transition: 0.5s;
