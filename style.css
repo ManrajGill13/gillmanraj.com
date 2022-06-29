@@ -30,3 +30,12 @@ p{
 	margin-top: 20px;
 	z-index: 1;
 }
+
+h1{
+	position: relative;
+	font-family: VHS;
+	color: #ffffff;
+	font-size: 3vh;
+	margin-top: 20px;
+	z-index: 1;
+}
